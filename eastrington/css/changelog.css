@@ -1,0 +1,17 @@
+/*		NOTES
+. = class
+# = id
+
+*/
+
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans);*/
+
+@font-face {
+    font-family: "openSans";
+    src: url("../fonts/openSans.woff") format('woff');
+}
+
+*{
+font-family: "Courier New", Monospace;
+}
+

@@ -1,0 +1,133 @@
+/*		NOTES
+. = class
+# = id
+
+*/
+
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans);*/
+
+@font-face {
+    font-family: "openSans";
+    src: url("../fonts/openSans.woff") format('woff');
+}
+
+*{
+/*
+color:#4D4E53;
+background-color:white;
+border:0;
+padding:0;
+*/
+color:#4A525A;
+margin:0;
+text-decoration:none;
+list-style:none;
+}
+
+#menutoggle{
+display:none;
+}
+
+#menu{
+width:20%;
+height:100%;
+top:0;
+left:-15%;
+position:fixed;
+transition:left 250ms ease;
+-moz-transition:left 250ms ease;
+-webkit-transition:left 250ms ease;
+z-index:1;
+overflow:hidden;
+background-color:white;
+}
+
+#menutoggle:checked + #menu{
+left:0;
+}
+
+#menutoggle:checked ~ #main{
+width:80%;
+}
+
+#menuleft{
+position:absolute;
+width:75%;
+height:100%;
+border-right:1px #4D4E53 solid;
+letter-spacing:-0.025em;
+word-spacing:0.025em;
+box-sizing:border-box;
+}
+
+#menuitembox{
+position:relative;
+width:80%;
+height:97%;
+margin:auto;
+top:3%;
+background-color:white;
+}
+
+#search{
+position:relative;
+font-family: "openSans", sans-serif;
+line-height:4;
+background-color:white;
+width:90%;
+padding-left:10%;
+float:left;
+padding-bottom:4%;
+}
+
+.menuitem{
+position:relative;
+font-family: "openSans", sans-serif;
+line-height:2.2;
+background-color:white;
+width:90%;
+padding-left:10%;
+float:left;
+}
+
+#menuright{
+position:relative;
+height:100%;
+width:25%;
+min-width:30px;
+float:right;
+cursor:pointer;
+}
+
+#menutogglecontainer{
+width:100%;
+position:relative;
+top:0;
+background-color:rgba(0,0,0,0);
+}
+
+#menuicon{
+text-align:center;
+position:relative;
+font-size:220%;
+cursor:pointer;
+font-family: 'Times New Roman';
+background-color:rgba(0,0,0,0);
+}
+
+#menuicon p{
+font-family: 'Times New Roman';
+background-color:rgba(0,0,0,0);
+}
+
+#menuiconmenu{
+font-family: "openSans", sans-serif;
+font-size:100%;
+text-align:center;
+position:relative;
+top:-0.7em;
+cursor:pointer;
+display:block;
+background-color:rgba(0,0,0,0);
+}
+

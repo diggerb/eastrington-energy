@@ -1,0 +1,113 @@
+/*		NOTES
+. = class
+# = id
+
+*/
+
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans);*/
+
+@font-face {
+    font-family: "openSans";
+    src: url("../fonts/openSans.woff") format('woff');
+}
+
+*{
+color:#4D4E53;
+padding:0;
+margin:0;
+border:0;
+background-color:white;
+text-decoration:none;
+list-style:none;
+}
+
+#overlay{
+width:100%;
+height:100%;
+background-color:white;
+position:fixed;
+z-index:9999;
+}
+
+#main{
+width:100%;
+background-color:white;
+position:relative;
+float:right;
+transition:width 250ms ease;
+-moz-transition:width 250ms ease;
+-webkit-transition:width 250ms ease;
+height:300px;
+font-family: "openSans", sans-serif;
+}
+
+.centre{
+position:relative;
+background-color:white;
+margin:0 auto;
+width:60%;
+height:100%;
+}
+
+#title{
+font-size:2.9vw;
+padding-top:10px;
+position:fixed;
+display:block;
+z-index:100;
+width:100%;
+background-color:white;
+}
+
+.text{
+position:relative;
+width:75%;
+height:1000px;
+background-color:white;
+margin:auto;
+text-align:center;
+}
+
+.text h2{
+font-size:2.45vw;
+padding-bottom:2%;
+}
+
+.text p{
+font-size:1.7vw;
+padding-bottom:2%;
+}
+
+.text p img{
+	width:100%;
+	height:100%;
+	max-width:500px;
+}
+
+.text p a{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#imgHover1{
+background:transparent;
+position:absolute;
+}
+
+#imgHover2{
+background:transparent;
+position:relative;
+height:100%;
+}
+
+#imgHover2 div{
+padding:10px;
+background:rgba(255,255,255,0.6);
+margin:auto;
+width:30%;
+text-align:center;
+top:50%;
+left:50%;
+position:absolute;
+transform:translate(-50%, -50%);
+}

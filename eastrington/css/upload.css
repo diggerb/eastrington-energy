@@ -1,0 +1,38 @@
+/*		NOTES
+. = class
+# = id
+
+*/
+
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans);*/
+
+@font-face {
+    font-family: "openSans";
+    src: url("../fonts/openSans.woff") format('woff');
+}
+
+a:not(#menuitembox a){
+text-decoration: underline;
+}
+
+#main{
+	width:80%;
+	background:white;
+	height:100px;
+	left:5%;
+	position:absolute;
+	transition:left 250ms ease;
+	-moz-transition:left 250ms ease;
+	-webkit-transition:left 250ms ease;
+}
+
+#menutoggle:checked ~ #main{
+	left:20%;
+}
+
+#mainpart{
+	width:90%;
+	float:right;
+	background: white;
+	height:100px;
+}

@@ -1,0 +1,168 @@
+/*		NOTES
+. = class
+# = id
+
+*/
+
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans);*/
+
+@font-face {
+    font-family: "openSans";
+    src: url("../fonts/openSans.woff") format('woff');
+}
+
+*{
+/*color:#4D4E53;*/
+color:#4A525A;
+padding:0;
+margin:0;
+border:0;
+background-color:white;
+text-decoration:none;
+list-style:none;
+}
+
+#overlay{
+width:100%;
+height:100%;
+background-color:white;
+position:fixed;
+z-index:9999;
+}
+
+#main{
+width:100%;
+background-color:white;
+position:relative;
+float:right;
+transition:width 250ms ease;
+-moz-transition:width 250ms ease;
+-webkit-transition:width 250ms ease;
+top:1em;
+overflow:hidden;
+}
+
+.centre{
+position:relative;
+background-color:white;
+margin:0px auto;
+padding-bottom:40px;
+}
+
+.cf:before, .cf:after{
+content:" ";
+display:table;
+}
+
+.cf:after{
+clear:both;
+}
+
+.item{
+float:left;
+display:inline;
+background-size:100% 100%;
+overflow:hidden;
+cursor:pointer;
+}
+
+.itemhover{
+position:relative;
+height:100%;
+width:100%;
+background-color:rgba(255,255,255,0.65);
+top:70%;
+transition:top 300ms ease;
+-moz-transition:top 300ms ease;
+-webkit-transition:top 300ms ease;
+overflow:hidden;
+}
+
+.item:hover > .itemhover{
+top:0;
+visibility:visible;
+}
+
+.title{
+background-color:rgba(255,255,255,0);
+font-family: "openSans", sans-serif;
+display:block;
+position:absolute;
+width:95%;
+line-height:1.1em;
+text-align:center;
+top:3%;
+left:2.5%;
+font-size:1.4vw;
+}
+
+.divider{
+width:70%;
+position:absolute;
+height:1px;
+left:15%;
+background-color:#4A525A;
+top:38%;
+}
+
+.description{
+font-family: "openSans", sans-serif;
+font-size:1.05vw;
+display:block;
+position:absolute;
+background-color:rgba(255,255,255,0);
+width:90%;
+text-align:center;
+top:45%;
+left:5%;
+}
+
+.specialitem{
+float:left;
+display:inline;
+background-color:white;
+}
+
+.specialitem div{
+width:80%;
+background-color:white;
+position:relative;
+margin:auto;
+}
+
+.header{
+float:left;
+display:inline;
+background-color:white;
+height:auto;
+border-bottom:1px #4D4E53 solid;
+padding-right:100%;
+
+}
+
+.header p{
+font-family: "openSans", sans-serif;
+font-size:1.9vw;
+display:block;
+margin-left:5%;
+}
+
+#welcome{
+display:block;
+height:auto;
+font-family: "openSans", sans-serif;
+font-size:1.9vw;
+position:relative;
+float:left;
+padding:4px;
+}
+
+#eastrington{
+display:block;
+height:auto;
+font-family: "openSans", sans-serif;
+font-size:4.3vw;
+position:relative;
+float:left;
+padding:4px;
+}

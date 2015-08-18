@@ -1,0 +1,39 @@
+/*		NOTES
+. = class
+# = id
+
+*/
+
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans);*/
+
+@font-face {
+    font-family: "openSans";
+    src: url("../fonts/openSans.woff") format('woff');
+}
+
+*{
+font-family: "openSans", sans-serif;
+}
+
+a{
+color:black;
+}
+
+.rightbox{
+position:absolute;
+right:0;
+top:15%;
+background-color:#4A525A;
+height:auto;
+width:250px;
+color:white;
+padding:20px;
+}
+
+.rightbox a{
+color:white;
+}
+
+#i{
+	display:none;
+}
